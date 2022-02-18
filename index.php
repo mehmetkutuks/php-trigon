@@ -1,12 +1,18 @@
 <?php
 
-function f($sayi)
+function ucgen($sayi)
 {
-    $total = 1;
-    for ($i = 1; $i <= $sayi; $sayi--) {
-        $total *= $sayi;
+    $newSayi = $sayi - 2;
+    $b = -1;
+    while ($newSayi >= $b)
+    {
+        $b++;
+        for ($a = 0; $a <= $b; $a++)
+        {
+            print 'O';
+        }
+        print "<br>";
     }
-    return $total;
 }
 
-echo f(3) * f(2);
+ucgen(20);
